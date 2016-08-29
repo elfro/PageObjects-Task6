@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import ru.yandex.qatools.allure.annotations.Step;
 
 public class LoginPage {
     private WebDriver driver;
@@ -27,12 +28,14 @@ public class LoginPage {
         return this;
     }
 
+    @Step
     public LoginPage setEmailPassword(String user, String password) {
         this.user.sendKeys(user);
         this.password.sendKeys(password);
         return this;
     }
 
+    @Step
     public BoardsPage clickLoginBtn() {
         loginBtn.click();
         return new BoardsPage(driver);
