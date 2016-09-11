@@ -48,3 +48,4 @@ public class AllureTestListener extends TestListenerAdapter {
 
     }
 }
+
