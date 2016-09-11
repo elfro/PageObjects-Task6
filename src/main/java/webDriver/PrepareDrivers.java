@@ -13,7 +13,7 @@ public class PrepareDrivers {
     }
 
     public static DesiredCapabilities prepareChrome() {
-        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/test/resources/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\src\\test\\resources\\chromedriver.exe");
         capabilities = DesiredCapabilities.chrome();
         return capabilities;
     }
