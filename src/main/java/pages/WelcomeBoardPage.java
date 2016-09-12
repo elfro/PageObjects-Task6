@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import ru.yandex.qatools.allure.annotations.Step;
 
-public class WelcomeBoardPage extends BasePage{
+public class WelcomeBoardPage extends BasePage {
     private MemberMenuBlock memberMenuBlock;
     private Actions actions;
 
@@ -23,7 +23,7 @@ public class WelcomeBoardPage extends BasePage{
 
     public WelcomeBoardPage(WebDriver driver) {
         super(driver);
-        memberMenuBlock = PageFactory.initElements(driver,MemberMenuBlock.class);
+        memberMenuBlock = PageFactory.initElements(driver, MemberMenuBlock.class);
     }
 
     public WelcomeBoardPage dragAndDrop(WebElement source, WebElement target) {
@@ -44,13 +44,12 @@ public class WelcomeBoardPage extends BasePage{
         return this;
     }
 
-    public String getColumnName()
-    {
+    public String getColumnName() {
         return targetElementColumn.getText();
     }
 
     @Step
-    public void logOut(){
+    public void logOut() {
         memberMenuBlock.logout();
     }
 }

@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import ru.yandex.qatools.allure.annotations.Step;
 
-public class BoardsPage extends BasePage{
+public class BoardsPage extends BasePage {
     @FindBy(xpath = "//span[@title='Welcome Board' and @class='board-tile-details-name']")
     private WebElement welcomeBoardTile;
 

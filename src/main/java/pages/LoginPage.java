@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import ru.yandex.qatools.allure.annotations.Step;
 
-public class LoginPage extends BasePage{
+public class LoginPage extends BasePage {
     private static final String URL = "https://trello.com/login";
 
     @FindBy(id = "user")

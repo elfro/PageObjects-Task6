@@ -31,6 +31,7 @@ public class AllureTestListener extends TestListenerAdapter {
         WebDriver driver = ((BaseTest) currentClass).driver;
         makeScreenShot(testName, driver);
     }
+
     @Override
     public void onTestSkipped(ITestResult iTestResult) {
     }

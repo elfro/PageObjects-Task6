@@ -3,9 +3,6 @@ package webDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import java.io.File;
-import java.util.Map;
-
 public class PrepareDrivers {
     public static DesiredCapabilities capabilities;
 

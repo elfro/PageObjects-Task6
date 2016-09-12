@@ -13,6 +13,7 @@ import static java.util.concurrent.TimeUnit.SECONDS;
 public class BaseTest {
     protected Browser browser;
     protected WebDriver driver;
+
     @Parameters("browser")
     @BeforeClass(alwaysRun = true)
     public void setUp(@Optional String browserName) {
