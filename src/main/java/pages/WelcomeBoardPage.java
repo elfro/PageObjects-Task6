@@ -1,6 +1,7 @@
 package pages;
 
 import blocks.MemberMenuBlock;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -26,11 +27,13 @@ public class WelcomeBoardPage extends BasePage {
         memberMenuBlock = PageFactory.initElements(driver, MemberMenuBlock.class);
     }
 
+
     public WelcomeBoardPage dragAndDrop(WebElement source, WebElement target) {
         Actions actions = new Actions(driver);
         actions.dragAndDrop(source, target).perform();
         return this;
     }
+
 
     @Step
     public WelcomeBoardPage dragAndDropCard() {

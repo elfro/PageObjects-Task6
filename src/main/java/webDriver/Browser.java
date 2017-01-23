@@ -23,10 +23,15 @@ public class Browser {
                 LOG.info("MyWebDriverFactory: browser Chrome. ");
                 return driver = WebDriverFactory.getDriver(PrepareDrivers.prepareChrome());
 
+            case "EDGE":
+                LOG.info("MyWebDriverFactory: browser EDGE. ");
+                return driver = WebDriverFactory.getDriver(PrepareDrivers.prepareEDGE());
+
             default:
                 LOG.info("MyWebDriverFactory: browser unknown. Default option - Firefox");
-                return driver = WebDriverFactory.getDriver(PrepareDrivers.prepareFirefox());
+                return driver = WebDriverFactory.getDriver(PrepareDrivers.prepareChrome());
         }
     }
 }
+
 

@@ -13,6 +13,7 @@ import ru.yandex.qatools.allure.annotations.TestCaseId;
 
 import java.io.IOException;
 
+
 @Listeners(value = AllureTestListener.class)
 public class SimpleTrelloTest extends BaseTest {
     private LoginPage loginPage;
@@ -36,6 +37,7 @@ public class SimpleTrelloTest extends BaseTest {
         boardsPage.openWelcomeBoard();
         welcomeBoardPage.dragAndDropCard();
         Assert.assertEquals(expectedResult, welcomeBoardPage.getColumnName());
+
         welcomeBoardPage.dragAndDropBack().logOut();
     }
 }
